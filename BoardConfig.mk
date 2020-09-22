@@ -201,6 +201,10 @@ TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD := true
 #BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-minimal
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /product/lib64/libdpmframework.so|libshim_dpmframework.so
+
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 BOARD_VNDK_VERSION := current
