@@ -12,17 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from laurel_sprout device
 $(call inherit-product, device/xiaomi/laurel_sprout/device.mk)
 
-# Inherit some common EvolutionX stuff.
+# Inherit some cool derpness.
 WITH_GAPPS := true
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
-
-# Inherit from custom vendor
-#$(call inherit-product, vendor/MiuiCamera/config.mk)
-
-# Props
-EVO_MAINTAINER := HemantSachdeva
-EVO_BUILD_TYPE := UNOFFICIAL
-EVO_SUPPORT_URL := https://t.me/EvolutionXA3
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 720
@@ -31,7 +23,7 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_laurel_sprout
+PRODUCT_NAME := derp_laurel_sprout
 PRODUCT_DEVICE := laurel_sprout
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A3
