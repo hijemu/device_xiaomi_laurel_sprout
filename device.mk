@@ -239,6 +239,11 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne \
     services-ext
 
+# ConfigStore
+PRODUCT_PACKAGES += \
+    libplatformconfig \
+    vendor.qti.hardware.capabilityconfigstore@1.0.vendor
+    
 # Device-specific settings
 PRODUCT_PACKAGES += \
     XiaomiParts
