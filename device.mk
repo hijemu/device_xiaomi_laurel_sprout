@@ -486,9 +486,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     telephony-ext
 
-# Shims
-PRODUCT_PACKAGES += \
-    libdpmframework_shim
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # TextClassifier
 PRODUCT_PACKAGES += \
